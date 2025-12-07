@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Simulado - Variáveis, Sequencial, IF, While, For, List</title>
+<style>
+    body {
+        font-family: Arial;
+        margin: 30px;
+        background: #f6f6f6;
+    }
+    h1 { text-align: center; }
+    .question {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border-left: 5px solid #0077cc;
+    }
+    button {
+        padding: 15px 20px;
+        font-size: 16px;
+        background: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        display: block;
+        margin: 25px auto;
+    }
+    button:hover { background: #005fa3; }
+    .result {
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+        border-left: 6px solid green;
+    }
+</style>
+</head>
+<body>
+
+<h1>Simulado – Variáveis, Sequencial, IF, While, For, List</h1>
+
+<form id="quizForm">
+
+<!-- ======================= -->
+<!-- ===== QUESTÕES ========= -->
+<!-- ======================= -->
+
+<!-- 1 -->
+<div class="question">
+<p><b>1. Qual declaração de variável em C# está correta?</b></p>
+<input type="radio" name="q1" value="a"> int idade;<br>
+<input type="radio" name="q1" value="b"> idade int;<br>
+<input type="radio" name="q1" value="c"> int idade = "20";<br>
+<input type="radio" name="q1" value="d"> int 2idade;<br>
+</div>
+
+<!-- 2 -->
+<div class="question">
+<p><b>2. Programação sequencial significa:</b></p>
+<input type="radio" name="q2" value="b"> Executar instruções de cima para baixo, sem desvios<br>
+<input type="radio" name="q2" value="a"> Usar loops<br>
+<input type="radio" name="q2" value="c"> Usar listas<br>
+<input type="radio" name="q2" value="d"> Criar funções<br>
+</div>
+
+<!-- 3 -->
+<div class="question">
+<p><b>3. O que Console.ReadLine() retorna?</b></p>
+<input type="radio" name="q3" value="c"> string<br>
+<input type="radio" name="q3" value="a"> int<br>
+<input type="radio" name="q3" value="b"> float<br>
+<input type="radio" name="q3" value="d"> bool<br>
+</div>
+
+<!-- 4 -->
+<div class="question">
+<p><b>4. Qual é um nome de variável válido?</b></p>
+<input type="radio" name="q4" value="a"> total_vendas<br>
+<input type="radio" name="q4" value="b"> nome completo<br>
+<input type="radio" name="q4" value="c"> 2valor<br>
+<input type="radio" name="q4" value="d"> preço<br>
+</div>
+
+<!-- 5 -->
+<div class="question">
+<p><b>5. Em programação sequencial, qual é a ordem correta?</b></p>
+<input type="radio" name="q5" value="d"> Entrada → Processamento → Saída<br>
+<input type="radio" name="q5" value="a"> Saída → Entrada → Processamento<br>
+<input type="radio" name="q5" value="b"> Processamento → Entrada → Saída<br>
+<input type="radio" name="q5" value="c"> Entrada → Saída → Processamento<br>
+</div>
+
+<!-- 6 -->
+<div class="question">
+<p><b>6. Qual comando representa decisão?</b></p>
+<input type="radio" name="q6" value="a"> if<br>
+<input type="radio" name="q6" value="b"> for<br>
+<input type="radio" name="q6" value="c"> while<br>
+<input type="radio" name="q6" value="d"> List<br>
+</div>
+
+<!-- 7 -->
+<div class="question">
+<p><b>7. If correto em C#:</b></p>
+<input type="radio" name="q7" value="a"> if (x > 10) { Console.WriteLine("OK"); }<br>
+<input type="radio" name="q7" value="b"> if x > 10 then<br>
+<input type="radio" name="q7" value="c"> if (x > 10)<br>
+</div>
+
+<!-- 8 -->
+<div class="question">
+<p><b>8. Resultado do código:</b><br>
+x = 5<br>
+if (x > 3) escreva("A") senão escreva("B")</p>
+<input type="radio" name="q8" value="c"> A<br>
+<input type="radio" name="q8" value="a"> B<br>
+<input type="radio" name="q8" value="b"> Nenhum<br>
+</div>
+
+<!-- 9 -->
+<div class="question">
+<p><b>9. While correto:</b></p>
+<input type="radio" name="q9" value="b"> while (i < 10) { i++; }<br>
+<input type="radio" name="q9" value="a"> while i < 10<br>
+<input type="radio" name="q9" value="c"> while (i < 10)<br>
+<input type="radio" name="q9" value="d"> while()<br>
+</div>
+
+<!-- 10 -->
+<div class="question">
+<p><b>10. Para que serve o while?</b></p>
+<input type="radio" name="q10" value="a"> Repetir enquanto a condição for verdadeira<br>
+<input type="radio" name="q10" value="b"> Criar listas<br>
+<input type="radio" name="q10" value="c"> Declarar variáveis<br>
+<input type="radio" name="q10" value="d"> Finalizar programa<br>
+</div>
+
+<!-- 11 -->
+<div class="question">
+<p><b>11. For correto:</b></p>
+<input type="radio" name="q11" value="c"> for (int i = 0; i < 5; i++)<br>
+<input type="radio" name="q11" value="a"> for i < 5<br>
+<input type="radio" name="q11" value="b"> for (i++)<br>
+<input type="radio" name="q11" value="d"> for()<br>
+</div>
+
+<!-- 12 -->
+<div class="question">
+<p><b>12. O que o código imprime?</b><br>
+for (int i = 0; i < 3; i++) Console.WriteLine(i);</p>
+<input type="radio" name="q12" value="d"> 0 1 2<br>
+<input type="radio" name="q12" value="a"> 1 2 3<br>
+<input type="radio" name="q12" value="b"> 3 2 1<br>
+<input type="radio" name="q12" value="c"> Apenas 0<br>
+</div>
+
+<!-- 13 -->
+<div class="question">
+<p><b>13. Como criar uma lista de inteiros corretamente?</b></p>
+<input type="radio" name="q13" value="a"> List<int> valores = new List<int>();<br>
+<input type="radio" name="q13" value="b"> int List valores;<br>
+<input type="radio" name="q13" value="c"> List valores;<br>
+<input type="radio" name="q13" value="d"> List<int> valores;<br>
+</div>
+
+<!-- 14 -->
+<div class="question">
+<p><b>14. Como adicionar um valor à lista?</b></p>
+<input type="radio" name="q14" value="b"> valores.Add(10);<br>
+<input type="radio" name="q14" value="a"> Add.valores(10);<br>
+<input type="radio" name="q14" value="c"> valores + 10;<br>
+<input type="radio" name="q14" value="d"> valores = 10;<br>
+</div>
+
+<!-- 15 -->
+<div class="question">
+<p><b>15. Para percorrer uma lista, usamos:</b></p>
+<input type="radio" name="q15" value="c"> foreach<br>
+<input type="radio" name="q15" value="a"> while apenas<br>
+<input type="radio" name="q15" value="b"> if<br>
+<input type="radio" name="q15" value="d"> return<br>
+</div>
+
+<!-- 16 -->
+<div class="question">
+<p><b>16. O que esse while faz?</b><br>
+int i = 1;<br>
+while (i <= 3)<br>
+{ Console.WriteLine(i); i++; }</p>
+<input type="radio" name="q16" value="a"> 1 2 3<br>
+<input type="radio" name="q16" value="b"> 0 1 2<br>
+<input type="radio" name="q16" value="c"> 2 3 4<br>
+<input type="radio" name="q16" value="d"> Loop infinito<br>
+</div>
+
+<!-- 17 -->
+<div class="question">
+<p><b>17. O que esse if imprime?</b><br>
+int x = 10;<br>
+if (x == 10) Console.WriteLine("OK");</p>
+<input type="radio" name="q17" value="c"> OK<br>
+<input type="radio" name="q17" value="a"> Nada<br>
+<input type="radio" name="q17" value="b"> Erro<br>
+</div>
+
+<!-- (continua até q30) -->
+<!-- Para não ultrapassar limite da mensagem, restante segue no próximo envio -->
+</form>
+
+<button onclick="corrigir()">Corrigir Prova</button>
+
+<div id="resultado"></div>
+
+<script>
+// Gabarito das 30 questões
+const g = {
+q1:"a", q2:"b", q3:"c", q4:"a", q5:"d",
+q6:"a", q7:"a", q8:"c", q9:"b", q10:"a",
+q11:"c", q12:"d", q13:"a", q14:"b", q15:"c",
+q16:"a", q17:"c"
+};
+
+function corrigir() {
+    let total = Object.keys(g).length;
+    let acertos = 0;
+    let detalhes = "<h2>Resultado:</h2>";
+
+    for (let q in g) {
+        let resposta = document.querySelector(`input[name="${q}"]:checked`);
+        if (!resposta) {
+            detalhes += `<p><b>${q.replace("q","Questão ")}:</b> não respondida ❌</p>`;
+            continue;
+        }
+        if (resposta.value === g[q]) {
+            acertos++;
+            detalhes += `<p><b>${q.replace("q","Questão ")}:</b> correta ✅</p>`;
+        } else {
+            detalhes += `<p><b>${q.replace("q","Questão ")}:</b> errada ❌ (Correta: ${g[q]})</p>`;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+        `<div class='result'><h2>Você acertou ${acertos} de ${total}.</h2>${detalhes}</div>`;
+}
+</script>
+
+</body>
+</html>
+<!-- 18 -->
+<div class="question">
+<p><b>18. Qual saída do código?</b><br>
+int x = 2;<br>
+int y = 5;<br>
+if (x + y > 6) Console.WriteLine("A"); else Console.WriteLine("B");</p>
+<input type="radio" name="q18" value="b"> A<br>
+<input type="radio" name="q18" value="a"> B<br>
+<input type="radio" name="q18" value="c"> Nenhum<br>
+</div>
+
+<!-- 19 -->
+<div class="question">
+<p><b>19. Qual é a condição do while abaixo?</b><br>
+while (contador < 10)</p>
+<input type="radio" name="q19" value="a"> contador < 10<br>
+<input type="radio" name="q19" value="b"> contador > 10<br>
+<input type="radio" name="q19" value="c"> contador == 10<br>
+<input type="radio" name="q19" value="d"> nenhuma<br>
+</div>
+
+<!-- 20 -->
+<div class="question">
+<p><b>20. Qual for percorre 5 vezes?</b></p>
+<input type="radio" name="q20" value="d"> for (int i = 0; i < 5; i++)<br>
+<input type="radio" name="q20" value="a"> for (i < 5)<br>
+<input type="radio" name="q20" value="b"> for (i++;)<br>
+<input type="radio" name="q20" value="c"> for()<br>
+</div>
+
+<!-- 21 -->
+<div class="question">
+<p><b>21. O que esse while imprime?</b><br>
+int i = 3;<br>
+while (i > 0) { Console.WriteLine(i); i--; }</p>
+<input type="radio" name="q21" value="c"> 3 2 1<br>
+<input type="radio" name="q21" value="a"> 1 2 3<br>
+<input type="radio" name="q21" value="b"> Apenas 3<br>
+<input type="radio" name="q21" value="d"> Nada<br>
+</div>
+
+<!-- 22 -->
+<div class="question">
+<p><b>22. Como acessar o primeiro item da lista valores?</b></p>
+<input type="radio" name="q22" value="a"> valores[0]<br>
+<input type="radio" name="q22" value="b"> valores(1)<br>
+<input type="radio" name="q22" value="c"> valores.1<br>
+<input type="radio" name="q22" value="d"> valores.first<br>
+</div>
+
+<!-- 23 -->
+<div class="question">
+<p><b>23. Qual foreach está correto?</b></p>
+<input type="radio" name="q23" value="d"> foreach (int n in valores) { Console.WriteLine(n); }<br>
+<input type="radio" name="q23" value="a"> foreach valores as n<br>
+<input type="radio" name="q23" value="b"> for (n in valores)<br>
+<input type="radio" name="q23" value="c"> foreach (n : valores)<br>
+</div>
+
+<!-- 24 -->
+<div class="question">
+<p><b>24. Qual é o erro comum com while?</b></p>
+<input type="radio" name="q24" value="b"> Loop infinito<br>
+<input type="radio" name="q24" value="a"> Não aceitar números<br>
+<input type="radio" name="q24" value="c"> Não funcionar com ints<br>
+<input type="radio" name="q24" value="d"> Nunca executar<br>
+</div>
+
+<!-- 25 -->
+<div class="question">
+<p><b>25. O que o código imprime?</b><br>
+List<string> nomes = new List<string>();<br>
+nomes.Add("Ana");<br>
+nomes.Add("Lia");<br>
+Console.WriteLine(nomes.Count);</p>
+<input type="radio" name="q25" value="a"> 2<br>
+<input type="radio" name="q25" value="b"> Ana e Lia<br>
+<input type="radio" name="q25" value="c"> 0<br>
+<input type="radio" name="q25" value="d"> Erro<br>
+</div>
+
+<!-- 26 -->
+<div class="question">
+<p><b>26. Qual é o uso correto de Add?</b></p>
+<input type="radio" name="q26" value="c"> lista.Add(50);<br>
+<input type="radio" name="q26" value="a"> Add.lista(50);<br>
+<input type="radio" name="q26" value="b"> lista + 50;<br>
+<input type="radio" name="q26" value="d"> lista.Add = 50;<br>
+</div>
+
+<!-- 27 -->
+<div class="question">
+<p><b>27. O que o for faz?</b></p>
+<input type="radio" name="q27" value="c"> Repete uma quantidade definida de vezes<br>
+<input type="radio" name="q27" value="a"> Declara variáveis<br>
+<input type="radio" name="q27" value="b"> Cria listas<br>
+<input type="radio" name="q27" value="d"> Lê entradas<br>
+</div>
+
+<!-- 28 -->
+<div class="question">
+<p><b>28. Qual linha cria corretamente uma lista de strings?</b></p>
+<input type="radio" name="q28" value="d"> List<string> nomes = new List<string>();<br>
+<input type="radio" name="q28" value="a"> List nomes = string();<br>
+<input type="radio" name="q28" value="b"> nomes = List();<br>
+<input type="radio" name="q28" value="c"> List<string> nomes;<br>
+</div>
+
+<!-- 29 -->
+<div class="question">
+<p><b>29. O que esse if retorna?</b><br>
+int n = 7;<br>
+if (n % 2 == 1) escreva("Ímpar"); else escreva("Par");</p>
+<input type="radio" name="q29" value="b"> Ímpar<br>
+<input type="radio" name="q29" value="a"> Par<br>
+<input type="radio" name="q29" value="c"> Erro<br>
+<input type="radio" name="q29" value="d"> Nada<br>
+</div>
+
+<!-- 30 -->
+<div class="question">
+<p><b>30. Para converter entrada em inteiro:</b></p>
+<input type="radio" name="q30" value="a"> int x = int.Parse(Console.ReadLine());<br>
+<input type="radio" name="q30" value="b"> int x = Console.ReadLine();<br>
+<input type="radio" name="q30" value="c"> x = Read.Int();<br>
+<input type="radio" name="q30" value="d"> Parse.Int(x);<br>
+</div>
+
+<script>
+// CONTINUAÇÃO DO GABARITO — adicione ao objeto g existente
+g.q18="b";
+g.q19="a";
+g.q20="d";
+g.q21="c";
+g.q22="a";
+g.q23="d";
+g.q24="b";
+g.q25="a";
+g.q26="c";
+g.q27="c";
+g.q28="d";
+g.q29="b";
+g.q30="a";
+</script>
